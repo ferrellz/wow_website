@@ -1,0 +1,162 @@
+header {
+    text-align:center;
+    background-color: black;
+    width: 1000px;
+    margin:0px auto;
+	padding:11px;
+	overflow:hidden;
+}
+
+nav {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	z-index:1;
+	min-width:700px;
+    padding:11px;
+    text-align:center;
+}
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul {
+	z-index:1;
+	background: #beebfd; 
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+nav ul li {
+	float: left;
+	width:195px;
+}
+nav ul li:hover {
+	background: #bed4fd;
+}
+nav ul li a {
+	display: block; padding:15px 45px;
+	color: black; text-decoration: none;
+}
+
+nav ul ul {
+	background: #beebfd; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #beebfd;
+	border-bottom: 1px solid #beebfd;
+	position: relative;
+}
+nav ul ul li a {
+	padding: 10px 45px;
+	color: black;
+}	
+nav ul ul li a:hover {
+	background: #bed4fd;
+}
+
+.ui-widget{
+	text-align:center;
+	padding:15px;
+	margin-left: auto ;
+	margin-right: auto ;
+	overflow:hidden;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+html {
+    overflow-y: scroll;
+}
+.wrapper{
+	min-height: 100%;
+    margin-bottom: -40px;
+}
+
+.content {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	padding:10px;
+    text-align:center;
+    width: 1000px;
+    margin:15px auto; 
+	overflow:hidden;
+	position: relative;
+}
+.wrapper:after{
+	height: 40px;
+	content: "";
+	display: block;
+}
+footer {
+    height: 40px;
+    text-align:center;
+    background-color: black;
+    width: 1022px;
+    margin:0px auto;
+    color:white;
+    clear:both;
+	overflow:hidden;
+}
+
+.charTable{
+    line-height:10px;
+    height:50px;
+	min-width:700px;
+    float:center;
+    padding:11px;
+    text-align:center;
+	margin:0px auto;
+	overflow:hidden;
+}
+.rectangle2 {
+	width: 200px;
+	height: 30px;
+	background: #2383bf;
+	margin:5px auto;
+	position:relative;
+	left:0;
+	right:0;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	cursor:default;
+}
+.rectangle {
+	width: 200px;
+	height: 30px;
+    background: #57bf23;
+	margin:0px auto;
+	position:relative;
+	left:0;
+	right:0;
+}
+
+.errorMsg{
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+	text-align:center;
+	overflow:hidden;
+	color:red;
+}

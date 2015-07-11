@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteRule ^index$ index.php [L]
+RewriteRule ^connect$ connect.php [L]
+RewriteRule ^about$ about.php [L]
+RewriteRule ^vote$ vote.php [L]
+RewriteRule ^videos$ videos.php [L]
+RewriteRule ^changed$ changed.php [L]
+RewriteRule ^tos$ tos.php [L]
+RewriteRule ^register$ register.php [L]
+RewriteRule ^forgotacc$ forgotacc.php [L]
+RewriteRule ^changepass$ changepass.php [L]
+RewriteRule ^armory$ armory.php [L]
+RewriteRule ^hk$ hk.php [L]
+RewriteRule ^donate$ donate.php [L]
+ErrorDocument 404 /missing.php

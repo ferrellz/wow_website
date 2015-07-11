@@ -1,0 +1,14 @@
+.charname{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	font-weight:bold;
+	font-size:1.4em;
+	text-transform:uppercase;
+}
+
+.ui-widget{
+	text-align:center;
+	padding:15px;
+	margin-left: auto ;
+	margin-right: auto ;
+	overflow:hidden;
+}

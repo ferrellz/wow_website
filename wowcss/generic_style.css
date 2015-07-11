@@ -1,0 +1,149 @@
+header {
+    text-align:center;
+    background-color: black;
+    width: 1000px;
+    margin:0px auto;
+	padding:11px;
+	overflow:hidden;
+}
+
+nav {
+	z-index:1;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	min-width:700px;
+    padding:11px;
+    text-align:center;
+}
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul {
+	z-index:1;
+	background: #beebfd; 
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+nav ul li {
+	float: left;
+	width:195px;
+}
+nav ul li:hover {
+	background: #bed4fd;
+}
+nav ul li a {
+	display: block; padding:15px 45px;
+	color: black; text-decoration: none;
+}
+
+nav ul ul {
+	background: #beebfd; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #beebfd;
+	border-bottom: 1px solid #beebfd;
+	position: relative;
+}
+nav ul ul li a {
+	padding: 10px 45px;
+	color: black;
+}	
+nav ul ul li a:hover {
+	background: #bed4fd;
+}
+
+.content {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	padding:10px;
+    text-align:center;
+    width: 1000px;
+    margin:15px auto; 
+	overflow:hidden;
+}
+
+.borders_to_content{
+	border: 1px solid black;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+html {
+    overflow-y: scroll;
+}
+.wrapper{
+	min-height: 100%;
+    margin-bottom: -40px;
+}
+.wrapper:after{
+	height: 40px;
+	content: "";
+	display: block;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	cursor:default;
+}
+table{	
+    text-align:center;
+    margin:15px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	padding:10px;
+	text-align:left;
+}
+footer{
+    height: 40px;
+    text-align:center;
+    background-color: black;
+    width: 1022px;
+    margin:0px auto;
+    color:white;
+    clear:both;
+	overflow:hidden;
+
+}
+.scrollBox{
+	overflow:scroll;
+	height:500px;
+	width: 1000px;
+}
+.g-recaptcha{
+	width:300px;
+    margin:0 auto;
+}
+.errorMsg{
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+	text-align:center;
+	overflow:hidden;
+	color:red;
+}
